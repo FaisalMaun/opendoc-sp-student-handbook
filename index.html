@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Something funny</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="/opendoc-sp-student-handbook/site.styling_options.logo_path">
+
+  <link rel="icon" href="/opendoc-sp-student-handbook/assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/opendoc-sp-student-handbook/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/opendoc-sp-student-handbook/assets/styles/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Something funny"
+    href="/opendoc-sp-student-handbook/feed.xml">
+  <!-- Polyfill for corejs functions, promises, array.includes, array.from, etc. -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/babel-polyfill.min.js"></script>
+  <!-- Polyfill for dom functions -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/dom4.js" charset="utf-8"></script>
+  <!-- Polyfill for fetch API -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/fetch.umd.js"></script>
+  <!-- Priority Queue library for promises -->
+  <script src="/opendoc-sp-student-handbook/assets/js/pqueue.js"></script>
+  <!-- Helper functions that should be preloaded go here -->
+  <script src="/opendoc-sp-student-handbook/assets/js/helpers.js"></script></head>
+
+<body>
+  <div class="site-header no-print">
+    <div class="site-header-left">
+      <a href="/opendoc-sp-student-handbook/">
+        <h1 class="site-header-text">
+          Something funny
+        </h1>
+      </a>
+      <span class="site-last-updated">
+        LAST UPDATED: 22 NOVEMBER 2019
+      <span>
+    </div>
+    <div class="site-header-right"><a id="contact-us" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+        <span>Contact Us</span>
+      </a>
+      <a href="" class="desktop">
+        <img class="agency-logo" src="/opendoc-sp-student-handbook/assets/logo.png">
+      </a>
+      <a href="/opendoc-sp-student-handbook/" class="mobile">
+        <img class="agency-logo" src="/opendoc-sp-student-handbook/assets/logo.png">
+      </a>
+      <a class="search-btn top-mobile-btn">
+        <img src="/opendoc-sp-student-handbook/assets/images/search-icon-dark.svg">
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav no-print">
+    <div class="nav-header no-print">
+      <div class="search-box">
+        <div class="search-icon-container search-btn">
+          <img class="search-icon mobile" src="/opendoc-sp-student-handbook/assets/images/search-icon-dark.svg"/>
+          <img class="search-icon" src="/opendoc-sp-student-handbook/assets/images/search-icon-white.svg"/>
+          <img class="close-icon" src="/opendoc-sp-student-handbook/assets/images/close.svg"/>
+        </div>
+        <span class="search-filter hidden">Something funny</span>
+        <div class="search-input-container">
+          <p class="search-header">search entire site</p>
+          <input id="search-box" placeholder="Search titles or keywords" type="text" />
+        </div>
+        <label class="clear-button">
+          <svg class="clear-icon" viewBox="0 0 18 18" width="18" height="18">
+            <path d="M2.42755 1L17.0331 15.60554l-1.41423 1.4142L1 2.38402"></path>
+            <path d="M1 15.51932L15.51933 1l1.4142 1.4142L2.2978 17.0331"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="search-results">
+      </div>
+    </div>
+    <div class="nav-main no-print"><section class="navigation">
+
+
+
+
+<ul class="table-of-directories">
+
+
+
+
+
+
+
+<li>
+<a href="/opendoc-sp-student-handbook/" id="dir_/" class="tod-container">
+<div class="directory-item">
+Something funny
+</div></a>
+</li>
+
+<li>
+<a href="/opendoc-sp-student-handbook/AA%20Document%202/" id="dir_/aa%20document%202/" class="tod-container">
+<div class="directory-item">
+Test Document
+</div></a>
+</li>
+
+<li>
+<a href="/opendoc-sp-student-handbook/Document%201/" id="dir_/document%201/" class="tod-container">
+<div class="directory-item">
+This is a Document Title
+</div></a>
+</li>
+
+
+</ul>
+<div class="back-to-documents">
+    <p>Back to Documents <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/chevron-up.svg"></p>
+</div>
+
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme" class="nav-link"><span class="directory-item"> How to create a new Opendoc </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#task-list" class="nav-link"><span class="directory-item"> Task List </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#github" class="nav-link"><span class="directory-item"> Github </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#netlify" class="nav-link"><span class="directory-item"> Netlify </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html" class="nav-link"><span class="directory-item"> This is a Sample Page </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#manufacturing-as-key-growth-engine" class="nav-link"><span class="directory-item"> Manufacturing as key growth engine </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#spirit-of-leadership" class="nav-link"><span class="directory-item"> Spirit of leadership </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#conclusion" class="nav-link"><span class="directory-item"> Conclusion </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/aa%20document%202/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 1 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 2 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/document%201/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 1 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 2 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+</section>
+</div>
+  </nav><div id="index-div" class="index">
+  <header class="doc-header no-print">
+    <div class=description-container>
+      <h2 id="document-title">
+        Something funny
+      </h2>
+      <div>
+        <div id="document-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar-container no-print">
+    <label for="menu-toggle" class="toolbar-button" id="menu-toggle-btn">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/sidebar.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/sidebar-hover.svg">
+        <img class="mobile-btn-icon " src="/opendoc-sp-student-handbook/assets/images/menu.svg">
+        <img class="mobile-btn-icon close" src="/opendoc-sp-student-handbook/assets/images/x-mobile.svg">
+        <div class="tooltip">Toggle Sidebar</div>
+    </label>
+    <div class="toolbar-button print-btn">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/pdf.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/pdf-hover.svg">
+        <div class="tooltip">Save as PDF</div>
+    </div>
+    <div class="toolbar-button edit-btn">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/github.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/github-hover.svg">
+        <div class="tooltip">View on Github</div>
+    </div>
+</div>
+
+<div class="fab no-print" id="fab">
+    <div class="overlay" id="fab-overlay"></div>
+    <div class="back-to-top hidden" id="back-to-top" href="#">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/chevron-up-white.svg">
+    </div>
+    <div class="trigger" id="fab-trigger">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/vertical-dots.svg">
+        <img class="btn-icon close" src="/opendoc-sp-student-handbook/assets/images/x-mobile.svg">
+    </div>
+    <div class="actions"><a class="action feedback-btn" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/feedback.svg">
+            <div class="tooltip">Feedback</div>
+        </a>
+        <div class="action share-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/share.svg">
+            <div class="tooltip">Share</div>
+        </div>
+        <div class="action print-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/pdf.svg">
+            <div class="tooltip">Save as PDF</div>
+        </div>
+        <div class="action edit-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/github.svg">
+            <div class="tooltip">View on Github</div>
+        </div>
+    </div>
+</div>
+  </div>
+
+  <main class="site-main" id="main-content" aria-label="Content"><div class="welcome-container">
+    <p class="welcome-text">Start by searching or selecting a document to browse</p>
+    <img class="welcome-image" src="/opendoc-sp-student-handbook/assets/images/index-img.png" />
+    <button class="welcome-button">Start Browsing</button>
+</div>
+  </main>
+  <div class="site-branding no-print">
+    Powered by <a href="https://opendoc.sg"><img src="/opendoc-sp-student-handbook/assets/images/opendoc-logo-full.svg"></a>
+  </div>
+
+  <script src="/opendoc-sp-student-handbook/assets/vendor/jump.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/headroom.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/mark.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/web-share-shim.bundle.min.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/toolbar.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/page-index.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/pre-loader.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/lunr.min.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/search.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/header.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/navigation.js"></script>
+</body>
+
+</html>

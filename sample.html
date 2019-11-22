@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sample page</title>
+  <meta name="description" content="This is a Sample Page
+
+Speech by Mr Heng Swee Keat, Minister for Finance at the Singapore Manufactur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:image" content="/opendoc-sp-student-handbook/site.styling_options.logo_path">
+
+  <link rel="icon" href="/opendoc-sp-student-handbook/assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/opendoc-sp-student-handbook/assets/styles/normalize.css">
+  <link rel="stylesheet" href="/opendoc-sp-student-handbook/assets/styles/main.css">
+  <link rel="alternate" type="application/rss+xml" title="Something funny"
+    href="/opendoc-sp-student-handbook/feed.xml">
+  <!-- Polyfill for corejs functions, promises, array.includes, array.from, etc. -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/babel-polyfill.min.js"></script>
+  <!-- Polyfill for dom functions -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/dom4.js" charset="utf-8"></script>
+  <!-- Polyfill for fetch API -->
+  <script src="/opendoc-sp-student-handbook/assets/vendor/fetch.umd.js"></script>
+  <!-- Priority Queue library for promises -->
+  <script src="/opendoc-sp-student-handbook/assets/js/pqueue.js"></script>
+  <!-- Helper functions that should be preloaded go here -->
+  <script src="/opendoc-sp-student-handbook/assets/js/helpers.js"></script></head>
+
+<body>
+  <div class="site-header no-print">
+    <div class="site-header-left">
+      <a href="/opendoc-sp-student-handbook/">
+        <h1 class="site-header-text">
+          Something funny
+        </h1>
+      </a>
+      <span class="site-last-updated">
+        LAST UPDATED: 22 NOVEMBER 2019
+      <span>
+    </div>
+    <div class="site-header-right"><a id="contact-us" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+        <span>Contact Us</span>
+      </a>
+      <a href="" class="desktop">
+        <img class="agency-logo" src="/opendoc-sp-student-handbook/assets/logo.png">
+      </a>
+      <a href="/opendoc-sp-student-handbook/" class="mobile">
+        <img class="agency-logo" src="/opendoc-sp-student-handbook/assets/logo.png">
+      </a>
+      <a class="search-btn top-mobile-btn">
+        <img src="/opendoc-sp-student-handbook/assets/images/search-icon-dark.svg">
+      </a>
+    </div>
+  </div>
+
+  <nav class="site-nav no-print">
+    <div class="nav-header no-print">
+      <div class="search-box">
+        <div class="search-icon-container search-btn">
+          <img class="search-icon mobile" src="/opendoc-sp-student-handbook/assets/images/search-icon-dark.svg"/>
+          <img class="search-icon" src="/opendoc-sp-student-handbook/assets/images/search-icon-white.svg"/>
+          <img class="close-icon" src="/opendoc-sp-student-handbook/assets/images/close.svg"/>
+        </div>
+        <span class="search-filter hidden">Something funny</span>
+        <div class="search-input-container">
+          <p class="search-header">search entire site</p>
+          <input id="search-box" placeholder="Search titles or keywords" type="text" />
+        </div>
+        <label class="clear-button">
+          <svg class="clear-icon" viewBox="0 0 18 18" width="18" height="18">
+            <path d="M2.42755 1L17.0331 15.60554l-1.41423 1.4142L1 2.38402"></path>
+            <path d="M1 15.51932L15.51933 1l1.4142 1.4142L2.2978 17.0331"></path>
+          </svg>
+        </label>
+      </div>
+      <div class="search-results">
+      </div>
+    </div>
+    <div class="nav-main no-print"><section class="navigation">
+
+
+
+
+<ul class="table-of-directories">
+
+
+
+
+
+
+
+<li>
+<a href="/opendoc-sp-student-handbook/" id="dir_/" class="tod-container">
+<div class="directory-item">
+Something funny
+</div></a>
+</li>
+
+<li>
+<a href="/opendoc-sp-student-handbook/AA%20Document%202/" id="dir_/aa%20document%202/" class="tod-container">
+<div class="directory-item">
+Test Document
+</div></a>
+</li>
+
+<li>
+<a href="/opendoc-sp-student-handbook/Document%201/" id="dir_/document%201/" class="tod-container">
+<div class="directory-item">
+This is a Document Title
+</div></a>
+</li>
+
+
+</ul>
+<div class="back-to-documents">
+    <p>Back to Documents <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/chevron-up.svg"></p>
+</div>
+
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme" class="nav-link"><span class="directory-item"> How to create a new Opendoc </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#task-list" class="nav-link"><span class="directory-item"> Task List </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#github" class="nav-link"><span class="directory-item"> Github </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/readme#netlify" class="nav-link"><span class="directory-item"> Netlify </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html" class="nav-link"><span class="directory-item"> This is a Sample Page </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#manufacturing-as-key-growth-engine" class="nav-link"><span class="directory-item"> Manufacturing as key growth engine </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#spirit-of-leadership" class="nav-link"><span class="directory-item"> Spirit of leadership </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/sample.html#conclusion" class="nav-link"><span class="directory-item"> Conclusion </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/aa%20document%202/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 1 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page1.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 2 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/AA%20Document%202/page2.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="contents" id="toc_/document%201/" hidden>
+    
+
+
+
+
+
+
+
+
+
+
+
+<ul class="table-of-contents">
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 1 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page1.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+  <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html" class="nav-link"><span class="directory-item"> Prospiciunt morti 2 </span></a>
+    <ul>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#sine-accedere-dolores-vires-alter-et-vivosque" class="nav-link"><span class="directory-item"> Sine accedere dolores vires alter et vivosque </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#astu-hac-primus-fuit-dextra-laedar-erat" class="nav-link"><span class="directory-item"> Astu hac primus fuit dextra laedar erat </span></a></li>
+      <li class="nav-branch"><a href="/opendoc-sp-student-handbook/Document%201/page2.html#nata-illa-canentis-hac-ubi-nec-neci" class="nav-link"><span class="directory-item"> Nata illa canentis hac ubi nec neci </span></a></li>
+    </ul>
+  </li>
+</ul>
+
+</section>
+
+
+</section>
+</div>
+  </nav><div id="index-div">
+  <header class="doc-header no-print">
+    <div class=description-container>
+      <h2 id="document-title">
+        Something funny
+      </h2>
+      <div>
+        <div id="document-subtitle">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar-container no-print">
+    <label for="menu-toggle" class="toolbar-button" id="menu-toggle-btn">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/sidebar.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/sidebar-hover.svg">
+        <img class="mobile-btn-icon " src="/opendoc-sp-student-handbook/assets/images/menu.svg">
+        <img class="mobile-btn-icon close" src="/opendoc-sp-student-handbook/assets/images/x-mobile.svg">
+        <div class="tooltip">Toggle Sidebar</div>
+    </label>
+    <div class="toolbar-button print-btn">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/pdf.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/pdf-hover.svg">
+        <div class="tooltip">Save as PDF</div>
+    </div>
+    <div class="toolbar-button edit-btn">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/github.svg">
+        <img class="btn-icon hover" src="/opendoc-sp-student-handbook/assets/images/github-hover.svg">
+        <div class="tooltip">View on Github</div>
+    </div>
+</div>
+
+<div class="fab no-print" id="fab">
+    <div class="overlay" id="fab-overlay"></div>
+    <div class="back-to-top hidden" id="back-to-top" href="#">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/chevron-up-white.svg">
+    </div>
+    <div class="trigger" id="fab-trigger">
+        <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/vertical-dots.svg">
+        <img class="btn-icon close" src="/opendoc-sp-student-handbook/assets/images/x-mobile.svg">
+    </div>
+    <div class="actions"><a class="action feedback-btn" href="https://form.gov.sg/5cee3d46138e3200109244df" target="_blank">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/feedback.svg">
+            <div class="tooltip">Feedback</div>
+        </a>
+        <div class="action share-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/share.svg">
+            <div class="tooltip">Share</div>
+        </div>
+        <div class="action print-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/pdf.svg">
+            <div class="tooltip">Save as PDF</div>
+        </div>
+        <div class="action edit-btn">
+            <img class="btn-icon" src="/opendoc-sp-student-handbook/assets/images/github.svg">
+            <div class="tooltip">View on Github</div>
+        </div>
+    </div>
+</div>
+  </div>
+
+  <main class="site-main" id="main-content" aria-label="Content"><h1 id="this-is-a-sample-page">This is a Sample Page</h1>
+
+<p>Speech by Mr Heng Swee Keat, Minister for Finance at the Singapore Manufacturing Federation (SMF) Awards and 86th Anniversary Dinner, 26 September 2018, 8:00pm at Resorts World Sentosa</p>
+
+<p>Excellencies, Ambassadors, High Commissioners</p>
+
+<p>Mr Douglas Foo, President, Singapore Manufacturing Federation</p>
+
+<p>Ladies and gentlemen</p>
+
+<ol>
+  <li>
+    <p>A very good evening. Thank you for inviting me to celebrate the 86th Anniversary of the Singapore Manufacturing Federation and the third iteration of the SMF Awards.</p>
+  </li>
+  <li>
+    <p>A few months back, I gave an interview to Zaobao and they asked me: what are your biggest challenges as Finance Minister? I told Zaobao, “As Finance Minister, 钱不够用，时间不够用.” Money not enough, time not enough. So, when I was coming for this evening’s event, somebody asked me, “You said that time not enough, then why are you spending time to go for all these events?”</p>
+  </li>
+  <li>
+    <p>I would tell you the first reason, and towards the end, I will tell you the second reason. The first reason is that, some of you would know, Douglas was made Nominated Member of Parliament (NMP), and in his interview and public statements, he said he would like to be an NMP  to champion the manufacturing sector. He would also like to build closer relations with our friends in ASEAN, so I’m very happy to see that so many of you are here.</p>
+  </li>
+  <li>
+    <p>I am very encouraged to see so many leaders and partners of the manufacturing community here tonight – SMF members, business leaders, heads of trade associations and chambers, and friends from overseas. It shows that SMF is adding value and is valued by your members and partners.</p>
+  </li>
+  <li>
+    <p>Indeed, SMF has come a long way and has a very rich history of championing Singapore’s manufacturing sector, since its inception in 1932. Over the past 86 years, you have worked tirelessly to help Singapore companies innovate, increase productivity, transform and expand overseas. SMF is the first Trade Association and Chamber to partner IMDA in the SME Go Digital Programme. I am glad to hear from Douglas the many initiatives that SMF is leading, such as the training internships and Asean portal, under your Strategic Roadmap 2020. I am confident that SMF will continue to play a leadership role in the manufacturing industry. The Government will, on our part, continue to strongly support your work.</p>
+  </li>
+</ol>
+
+<h2 id="manufacturing-as-key-growth-engine">Manufacturing as key growth engine</h2>
+
+<ol>
+  <li>The manufacturing sector is a key engine of economic growth.</li>
+</ol>
+
+<p>a. The sector contributes about 20 per cent of Singapore’s GDP and 14 per cent of total employment. Many of your businesses anchor high-value and complex activities in Singapore, that in turn provide skilled jobs for Singaporeans at various levels, including technicians, engineers and researchers.</p>
+
+<p>b. The sector has been doing well, with GDP growth of 10.2 per cent over the previous year. In comparison, the overall economy grew 3.9 per cent in the second quarter this year.</p>
+
+<p>c. Your activities also support those of other sectors such as wholesale trade and business services, and have extensive linkages with other parts of the economy.</p>
+
+<p>d. So, manufacturing will remain a key pillar of our economy for years to come.</p>
+
+<ol>
+  <li>However, we are also up against major shifts in the external environment. Manufacturing is a highly globalised and competitive sector. The digitalisation of manufacturing – which some refer to as Industry 4.0 – is transforming the sector globally. Rapid advancement of new technologies such as the industrial Internet-of-things, robotics and cloud computing, together with changes in global supply chains and consumer demand, are affecting business models.</li>
+</ol>
+
+<p>a. Let me share a few examples.</p>
+
+<p>i. Digital twinning technology, which creates a digital profile of a product idea, can test and tweak products without a physical prototype. Data from both the virtual and physical versions can be used to further optimise the product. This means companies can make better products, have faster innovation cycles, and reduce production costs.</p>
+
+<p>ii. As digitalisation and connectivity become pervasive, more manufacturers will be able to sell services, in addition to goods. For example, with the advent of ride-sharing technologies, car-makers are now seriously re-thinking whether their business model should centre around selling cars, or if they should offer transport services instead. Likewise, when SMF’s Manufacturing-as-a-Service portal is set up next year, plant owners can consider whether to sublet their underutilised plant capacity as a service to other manufacturers.</p>
+
+<p>b. To remain relevant and competitive, it is important that we make the effort to understand these technologies, and are prepared to adopt and integrate them into business processes. In turn, this will enhance value proposition to customers. Our workforce must similarly be ready to adapt to these changes, acquire new skills, and be redeployed to higher-value tasks.</p>
+
+<ol>
+  <li>Our manufacturers are not only confronting technological changes, but are also affected by other global economic forces.</li>
+</ol>
+
+<p>a. US-China trade tensions continue to unfold. i. In my conversations with businesses, I know that the risks are on your mind. Singapore’s manufacturers are expecting uncertainty, slow-down in export orders and weak business sentiments.</p>
+
+<p>ii. Our businesses will need to watch the trade war with caution, and continue to innovate, transform and build resilience.</p>
+
+<h2 id="spirit-of-leadership">Spirit of leadership</h2>
+
+<ol>
+  <li>
+    <p>Amidst these challenges, there are opportunities. I am confident that our manufacturing sector can overcome these challenges, and remain attractive to the world as a manufacturing hub. But this will not happen if we are slow or make incremental changes. We must act fast, embrace technology, transform our businesses, develop our talent, and be relevant to markets in the region and beyond.</p>
+  </li>
+  <li>
+    <p>It must start with all of you, as leaders of the manufacturing sector. The resilience and success of this sector will depend on the actions you take.</p>
+  </li>
+</ol>
+
+<p>a. In particular, the CEO and top management of every company must actively seek opportunities, overcome obstacles and challenges, and bring your teams together. Successful companies are led by leaders who have the vision to aim high, to spot opportunities, bring the team together to overcome challenges, and move doggedly to pursue their vision.</p>
+
+<p>i. This is the very spirit of the SMF Awards that I have the pleasure of giving out later – the Sustainable Growth Award, Business Model Innovation Award, and Collaborative Partnership Award, which recognise capable leaders and their efforts.</p>
+
+<ol>
+  <li>Tonight, I want to suggest three levels at which we can make significant moves to transform ourselves:</li>
+</ol>
+
+<p>a. First, within your company;</p>
+
+<p>b. Second, outside your company, in collaboration with others in the same industry; and</p>
+
+<p>c. Third, outside Singapore, in collaboration with our partners in ASEAN and beyond.</p>
+
+<ol>
+  <li>First, within your company.</li>
+</ol>
+
+<p>a. Leaders need to take ownership of transformation by</p>
+
+<p>i. Charting a path for future growth, and energising the team
+around this vision;</p>
+
+<p>ii. Cultivating a spirit of innovation within your firm to build competitive advantages; and</p>
+
+<p>iii. Deepening human and corporate capabilities to position the firm for the future.</p>
+
+<p>b. I am heartened to hear the five repeat winners of the SMF Awards. They may be from different fields – semiconductors, food manufacturing, communications, energy efficiency – but what’s common across them is that they have continued to innovate, moved into higher-value activities, created new revenue streams, enhanced the quality of their products, and ventured abroad.</p>
+
+<p>i. I encourage all of you here to explore how you can take further steps like these, in a way that makes sense for your own sector and circumstances.</p>
+
+<ol>
+  <li>Second, even as you transform your company, you can work with others in the same industry to achieve more. If you have seen the recent super-hero movies – The Avengers, or The Incredibles – you know that even super-heroes need each other’s help.</li>
+</ol>
+
+<p>a. A good number of firms have already started by using the Industry Transformation Maps, or ITMs, for manufacturing, which were launched progressively over the past few years. i. For example, the Precision Engineering ITM is helping firms to pool resources and increase productivity. Since its launch in 2016, we have 10 digital transformation projects in action now. Firms of different sizes within the industry are participating, and we expect to raise productivity by an average of 30 per cent.</p>
+
+<p>b. Trade Associations and Chambers like SMF also play a leadership role in building capabilities across the community.</p>
+
+<p>i. The SMF’s various SME Centres and the Singapore Innovation and Productivity Institute help firms to implement productivity upgrading projects. I understand that the SME Centre@SMF alone assisted over 5, SMEs last year.</p>
+
+<p>ii. There are many other initiatives that SMF is doing to bring the industry together, such as your conversations on the Future of Manufacturing and tonight’s SMF Awards.</p>
+
+<p>c. Our Government agencies and research institutes, too, will continue to support firms in your transformation effort.</p>
+
+<p>i. To help firms better understand how to adopt and scale Industry 4.0 solutions, EDB launched a self-diagnostic tool called the Singapore Smart Industry Readiness Index, to partner with the German company TUV SUD, last year. We welcome all firms to use this tool.</p>
+
+<p>ii. You can also visit ASTAR’s model factories, to co-develop and test new manufacturing technologies with researchers, before deploying them at your own facilities. The newest factory is at the Advanced Remanufacturing and Technology Centre launched last month.</p>
+
+<p>iii. We are also focusing on drawing synergies across the manufacturing ITM cluster, as well as across clusters, to achieve even better outcomes. I welcome your feedback on how we can refine and enhance these maps.</p>
+
+<ol>
+  <li>Third, to remain competitive and compete regionally and globally, you     will need to go beyond Singapore, tap into regional opportunities, and collaborate with ASEAN partners and global partners.</li>
+</ol>
+
+<p>a. The global economic weight is shifting back to Asia. Asia will play a larger role in global trade and investment flows.</p>
+
+<p>i. IMF projects Asia to lead global growth at an average of about 6.4% from now till 2023.</p>
+
+<p>ii. ASEAN and six of its FTA Partners involved in the Regional Comprehensive Economic Partnership are working towards a substantial conclusion, hopefully by the end of this year.</p>
+
+<p>iii. Singapore and China are also working to conclude a substantive upgrade of the China-Singapore FTA by the end of this year.</p>
+
+<p>iv. These will provide Singapore businesses with enhanced trade facilitation, and investment opportunities.</p>
+
+<p>b. ASEAN itself is a region of opportunities. ASEAN has very good potential to be both a manufacturing production base for the world, as well as a source of demand for services and goods. It is expected to be the fourth largest single market in the world by 2030, with annual growth of about 5 per cent per annum. This growth is largely driven from the growing middle class.</p>
+
+<p>c. There are opportunities for our firms to venture and invest in the region.</p>
+
+<p>i. You can be part of the Industrial Transformation Asia Pacific trade show happening next month, which Douglas mentioned earlier. Firms can network, exchange ideas and do business with one another.</p>
+
+<p>ii. As the Chair of ASEAN this year, Singapore has been looking into how we can strengthen regional connectivity and support digital innovations like FinTech and regional payments linkages. Greater regional connectivity will further support intra-ASEAN trade and investment.</p>
+
+<p>iii. I just launched the Networked Trade Platform, or the NTP, this morning. This will improve productivity, boost competitiveness, and create opportunities, bringing real benefits to our businesses. iv. In this regard, the SMF-RHB Collaborative Partnership Award (ASEAN) is a very timely award. It recognises the efforts of firms to seek new markets and growth opportunities, and which have benefited from close collaboration with ASEAN partners.</p>
+
+<p>d. Even as the Government and SMF provide broad frameworks and opportunities for cooperation, it is up to each firm to choose to step forward and build connections. This is not a zero-sum game. If firms across the region can work together, especially those with complementary capabilities, all of us will stand to benefit, and have a better chance of competing globally. In fact, our collaborations can also be with firms from all over the world.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ol>
+  <li>In closing, the manufacturing landscape is going to see major changes in the coming years – from disruptive technologies, the     structural changes in all economies will undergo and the shift of economic centre of gravity to Asia.</li>
+</ol>
+
+<p>a. Companies and their top management must therefore adopt a mind-set of seeking to collaborate, within the company, with others in the industry, and outside Singapore with our ASEAN partners, partners in Asia, and the rest of the world.</p>
+
+<p>b. At the same time, SMF, workers, Government agencies, and research institutes need to work together to support firms in their transformation journeys.</p>
+
+<p>c. I am sure that if we press on with our efforts, we will eventually be able to reinvent ourselves, and strengthen Singapore as a Global-Asia node of technology, innovation and enterprise.</p>
+
+<ol>
+  <li>
+    <p>On that note, my heartiest congratulations to the winners of the SMF Awards. I hope that you will build on your successes, and grow from strength to strength.</p>
+  </li>
+  <li>
+    <p>Congratulations also to SMF for 86 years of hard work and enduring support. You have come a long way, and laid a strong foundation for our manufacturing sector to grow. To Douglas, council members, who have just been elected, my heartiest congratulations again and you have a big job ahead, I wish you the very best, as you continue to serve your members and bring them to greater heights.</p>
+  </li>
+  <li>
+    <p>I have to tell you the second reason why I am here tonight. I am here tonight, with the hope that the little things I said and that you all getting together in partnership, will allow each and every one of you to make more money. Why? Because as Finance Minister, the more money you make, the more taxes I collect! So, you and I are exactly on the same side, and you have every support from us in the Government, certainly from the Finance Ministry, and since I’m also leading the Future Economy Council as well as our National Research Foundation, I will give you every support that I can while wearing various hats.</p>
+  </li>
+  <li>
+    <p>Thank you for having me here. I look forward to what we can all achieve together for our businesses and people.</p>
+  </li>
+</ol>
+
+
+  </main>
+  <div class="site-branding no-print">
+    Powered by <a href="https://opendoc.sg"><img src="/opendoc-sp-student-handbook/assets/images/opendoc-logo-full.svg"></a>
+  </div>
+
+  <script src="/opendoc-sp-student-handbook/assets/vendor/jump.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/headroom.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/mark.min.js" charset="utf-8"></script>
+  <script src="/opendoc-sp-student-handbook/assets/vendor/web-share-shim.bundle.min.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/toolbar.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/page-index.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/pre-loader.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/lunr.min.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/search.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/header.js"></script>
+  <script src="/opendoc-sp-student-handbook/assets/js/navigation.js"></script>
+</body>
+
+</html>
